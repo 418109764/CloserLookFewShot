@@ -89,9 +89,9 @@ if __name__=='__main__':
                 params.stop_epoch = 400 #default
         else: #meta-learning methods
             if params.n_shot == 1:
-                params.stop_epoch = 600
+                params.stop_epoch = 250  # 600
             elif params.n_shot == 5:
-                params.stop_epoch = 400
+                params.stop_epoch = 200  # 400
             else:
                 params.stop_epoch = 600 #default
      
