@@ -167,6 +167,7 @@ if __name__=='__main__':
     start_epoch = params.start_epoch
     stop_epoch = params.stop_epoch
     if params.method == 'maml' or params.method == 'maml_approx' :
+        params.stop_epoch = 50
         stop_epoch = params.stop_epoch * model.n_task #maml use multiple tasks in one update 
 
     if params.resume:
